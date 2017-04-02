@@ -14,10 +14,10 @@ class RouterTest extends TestCase
 ******************************************************************************************************/
 
     /**
+     * Test Missing Invoker
      * @test
      * @expectedException TypeError
      */
-
     public function missingInvoker()
     {
         $r = new Router();
@@ -25,8 +25,8 @@ class RouterTest extends TestCase
 
     }
 
-
     /**
+     * Test Successful Constructor
      * @test
      */
     public function constructor()
@@ -83,6 +83,7 @@ class RouterTest extends TestCase
         );
         $this->assertSame($response,$result);
     }
+
     /**
      * Test Multi Level Static Route
      * @test
@@ -136,7 +137,6 @@ class RouterTest extends TestCase
         );
     }
 
-
     /**
      * Test Controller Not Found
      * @test
@@ -163,7 +163,6 @@ class RouterTest extends TestCase
             $response
         );
     }
-
 
     /**
      * Test Get Request Found
@@ -531,7 +530,6 @@ class RouterTest extends TestCase
             $response
         );
     }
-
 
 }
 
