@@ -28,8 +28,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "KodCube\\Router\\Test\\":"./KodCube/Router/test",
-
+            "KodCube\\Router\\Test\\":"./KodCube/Router/test"
         }
     },
     "scripts": {
